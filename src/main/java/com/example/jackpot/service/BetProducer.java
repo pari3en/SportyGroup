@@ -2,7 +2,6 @@ package com.example.jackpot.service;
 
 import com.example.jackpot.model.Bet;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
