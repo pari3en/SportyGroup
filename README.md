@@ -1,6 +1,6 @@
 # Jackpot Service 
 
-Spring Boot implementation (mock Kafka) of the Jackpot Bets task.
+Spring Boot implementation (with Kafka) of the Jackpot Bets task.
 
 ## Requirements
 
@@ -8,13 +8,15 @@ To build and run this project locally, you must have:
 
 - **Java Runtime Environment (JRE) 21**  
 - **Gradle 8.6 or newer**  
+- **Docker 29.1.1 or newer**  
 
 ## Run locally
 
 Build, run tests and run application:
 ```
-./gradlew build
-./gradlew bootRun
+gradlew build
+docker build -t jackpot-service .
+docker compose up --build
 ```
 Open in browser Swagger-UI http://localhost:8080/swagger-ui/index.html
 
